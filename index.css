@@ -166,6 +166,10 @@ body {
         height: auto;
         background-color: white;
     }
+
+    .attribution {
+        color: hsl(228, 45%, 44%);
+    }
     
     .card{
         flex-direction: column-reverse;
