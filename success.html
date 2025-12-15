@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>Success Page</title>
+</head>
+<body>
+    <div id="container">
+        <div class="card success">
+            <div>
+                <img src="assets/images/icon-list.svg" alt="correct icon" class="success-icon">
+            </div>
+            <h1>Thanks for subscribing!</h1>
+            <p>
+                A confirmation email has been sent to 
+                <b><span id="user-email"></span></b>.
+                Please open it and click the button inside to confirm your subscription.
+            </p>
+            <button class="btn" onclick="dismiss()">Dismiss message</button>
+        </div>
+    </div>
+
+    <script>
+        const email = localStorage.getItem('subscriberEmail');
+        document.getElementById("user-email").textContent = email
+    </script>
+</body>
+</html>
